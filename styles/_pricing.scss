@@ -1,0 +1,85 @@
+.pricing-table{
+    width: 100%;
+    padding-bottom: 50px;
+    h2{
+        font-size: 2.5vw;
+        padding-top: 100px;
+    }
+    div{
+        width: 60%;
+        margin: auto;
+        div{
+            margin-top: 40px;
+            h3{
+                font-size: 1.2vw;
+                padding: 15px;
+            }
+            p{
+                padding: 10px;
+                font-weight: bolder;
+            }
+            div{
+                background-color: rgb(240, 240, 27);
+                color: #913dc2;
+                height: 2vw;
+                text-align: center;
+                padding-top: 10px;
+                width: 6vw;
+                font-size: 0.8vw;
+                font-weight: bold;
+                margin: auto;
+                margin-top: 15px;
+            }
+            div:hover{
+                cursor: pointer;
+            }
+        }
+        .pricing-line{
+            align-self: center;
+            height: 14vw;
+            margin-top: 2.5vw;
+            background-color: #b8b3b3;
+        }
+        .hr-line{
+            display: none;
+        }
+    }
+    @media (max-width: 1025px){
+        h2{
+            font-size: 6vw;
+        }
+        div{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            div{
+                h3{
+                    font-size: 4vw;
+                    padding-top: 0;
+                }
+                div{
+                    background-color: rgb(240, 240, 27);
+                    color: #913dc2;
+                    height: 8vw;
+                    text-align: center;
+                    width: 14vw;
+                    font-size: 3vw;
+                    font-weight: bold;
+                    margin: auto;
+                    margin-top: 15px;
+                }
+                div:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+        .pricing-line{
+            display: none;
+        }
+        .hr-line{
+            width: 80%;
+            height: 2px;
+        }
+    }
+}

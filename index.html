@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <title>Document</title>
+
+</head>
+<body>
+  <div class="main-page" id="home">  
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header" onscroll="myFunction()">
+          <a href="#" class="nav-logo">
+            ZIPPY
+          </a>
+          <button class="nav-btn btn">
+            <i class="fas fa-align-justify"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link"> HOME </a>
+          <a href="#projects" class="nav-link"> PROJECTS </a>
+          <a href="#pricing" class="nav-link"> PRICING </a>
+          <a href="#team" class="nav-link"> TEAM </a>
+          <a href="#zippy-blog" class="nav-link"> BLOG </a>
+          <a href="#contact-zippy" class="nav-link"> CONTACT </a>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="slideshow-container">
+  
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/2/morning-mountain-layers-photography-by-stephen-cairns.jpg?&targetx=-25&targety=0&imagewidth=750&imageheight=500&modelwidth=700&modelheight=500&backgroundcolor=8B506B&orientation=0" style="width:100%; height: 100vh;">
+  
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="https://c0.wallpaperflare.com/preview/165/766/447/4k-wallpaper-astronomy-evening-galaxy.jpg" style="width:100%; height: 100vh;">
+  
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="https://z6f7f9u5.stackpathcdn.com/wp-content/uploads/2021/08/billy-williams-8wz1Q4Q_XAg-unsplash-1-640x480.jpg" style="width:100%; height: 100vh;">
+  
+      </div>
+      <div class="mySlides fade">
+        <img src="https://www.enjpg.com/img/2020/mountain-12.jpg" style="width:100%; height: 100vh;">
+  
+      </div>
+      <div class="mySlides fade">
+        <img src="https://aspirekc.com/wp-content/uploads/2015/07/15159-serpentines-on-the-mountain-top-2880x1800-nature-wallpaper.jpg" style="width:100%; height: 100vh;">
+  
+      </div>
+    
+    </div>
+    <div id="cr" class="cross" onclick="myFunction()"></div>
+    <div class="div-sizing centered">
+      <h1 class="">
+        One page promising to fill all your needs!
+      </h1>
+      <p>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+      <div class="align-item">
+        <div class="yellow">LEARN MORE</div>
+        <div class="deepBlue">LEARN MORE</div>
+      </div>
+    </div>
+
+    <!-- The dots/circles -->
+    <br>
+    <div class="dots-btn bottom-left">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    
+  </div>
+  <main>
+    <div style="text-align: center;" class="about">
+      <h2 class="heading">Welcome to Zippy</h2>
+      <div style="display: flex;" class="about-box">
+        <p class="p-sizing">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solicitudin, lorem quis bibendum auctor.
+        </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7dvsDNl2tl_lMgUk4n2OGXH6kbh9w8y7_Lg&usqp=CAU" width="20%">
+      </div>
+      <div style="display: flex;" class="about-card">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRax92DZ663fYe5qpjb0Fu6yxlmDHmLMlH-wQ&usqp=CAU" width="30%">
+          <h3>Lorem Ipsum</h3>
+          <p class=".width-p">This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+        <hr class="line">
+        <div>
+          <img src="data:image/png;base64,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" width="30%">
+          <h3>DOLOR SIT</h3>
+          <p>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+        <hr class="line">
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIvF6w_27XIzUYUM2PvHf14RVUsFlDAFLFQw&usqp=CAU" width="30%">
+          <h3>CONSECTETURE</h3>
+          <p>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+      </div>
+    </div>
+    <hr class="line1" id="projects">
+    <div class="project-tab">
+       <h2 style="text-align: center;">Projects</h2>
+       <div style="display: flex;">
+        <div style="background-color: hsl(0, 4%, 80%);">
+          <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/66c94f102435275.5f3652d04de8d.jpg" width="100%">
+          <h3>PROJECT NAME</h3>
+          <P>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</P>
+          <div>LAUNCH CASE STUDY</div>
+        </div>
+        <hr class="project-line">
+        <div style="background-color: rgb(215, 230, 88);">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwYXBwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" width="100%">
+          <h3>PROJECT NAME</h3>
+          <P>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</P>
+          <div>LAUNCH CASE STUDY</div>
+        </div>
+        <hr class="project-line">
+        <div style="background-color: #e2dcdc;">
+          <img src="https://cdn.dribbble.com/users/103379/screenshots/15468464/media/48713b71adb567402b228a88ab007d4b.jpg?compress=1&resize=400x270" width="100%">
+          <h3>PROJECT NAME</h3>
+          <P>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</P>
+          <div>LAUNCH CASE STUDY</div>
+        </div>
+        <hr class="project-line">
+        <div style="background-color: #ccc5c5;">
+          <img src="https://www.dreamhost.com/blog/wp-content/uploads/2018/09/elements-web-design-opt-750x498.jpg" width="100%">
+          <h3 style="padding-top: 4px;">PROJECT NAME</h3>
+          <P>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</P>
+          <div>LAUNCH CASE STUDY</div>
+        </div>
+       </div>
+    </div>
+    <div style="text-align: center;" id="pricing" class="pricing-table">
+      <h2>Pricing Table</h2>
+      <div style="display: flex;">
+        <div style="margin-top: 42px;">
+          <h3>STANDARD PLAN</h3>
+          <P style="color: rgb(151, 147, 147);">Free</P>
+          <p>2 GB Available</p>
+          <p>15 max contacts</p>
+          <p>30 Messages/month</p>
+          <p>Ongoing Ads</p>
+          <div>BUY</div>
+        </div>
+        <hr class="pricing-line">
+        <hr class="hr-line">
+        <div>
+          <h3>BUSINESS PLAN</h3>
+          <P style="color: rgb(151, 147, 147);">19$/MONTH</P>
+          <p>10 GB Available</p>
+          <p>75 max contacts</p>
+          <p>120 Messages/month</p>
+          <p>Ads Free</p>
+          <div>BUY</div>
+        </div>
+        <hr class="pricing-line">
+        <hr class="hr-line">
+        <div>
+          <h3>PREMIUM PLAN</h3>
+          <P style="color: rgb(151, 147, 147);">14$/MONTH</P>
+          <p>100 GB Available</p>
+          <p>Unlimted contacts</p>
+          <p>Unlimted Messages/month</p>
+          <p>Ads Free</p>
+          <div>BUY</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;" class="project-video">
+      <h2>Video Projects</h2>
+      <div class="video-container">
+        <a class="video-slider, videobox">
+          <div class="video-slide">
+            <video controls>
+              <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_640_3MG.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-slide">
+            <video controls>
+              <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="video-slide">
+            <video controls>
+              <source src="https://samplelib.com/lib/preview/mp4/sample-20s.mp4" type="video/mp4">
+            </video>
+          </div>
+        </a>
+      
+      
+        <button class="video-slider-btn left-side" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="video-slider-btn right-side" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    <p id="team"></p>
+    <div style="text-align: center;" class="zippy-team">
+       <h2>ZIPPY TEAM</h2>
+       <div class="team-members">
+        <div>
+          <div>
+            <figure>
+              <img src="assets/people1.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>SARA JOGNSON</h3><p>Creative head</p></figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="assets/people2.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>MATT ALEX</h3><p>Art Director</p></figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="assets/people7.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>CHRIS PHILIPS</h3><p>Senior Designer</p></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div>
+            <figure>
+              <img src="assets/people4.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>JIMMY SMITH</h3><p>Marketing Manager</p></figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="assets/people5.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>ALIZA</h3><p>SEO MONSTER</p></figcaption>
+            </figure>
+          </div>
+          <div>
+            <figure>
+              <img src="assets/people6.png" alt="Trulli" style="width:150px" height="160px">
+              <figcaption><h3>CELIEN JOHN</h3><p>Senior Designer</p></figcaption>
+            </figure>
+          </div>
+        </div>
+       </div>
+    </div>
+    <div style="text-align: center;" class="life-in-zippy" id="life">
+       <h2>
+         Life in ZIPPY
+       </h2>
+       <div id="slider-wrapper">
+
+
+        <div id="image-slider">
+          <ul>
+            <li class="active-img">
+              <img src="assets/life1.png" alt="" />
+            </li>
+            <li>
+              <img src="assets/life2.png" alt="" />
+            </li>
+            <li>
+              <img src="assets/life3.png" alt="" />
+            </li>
+            <li>
+              <img src="assets/life4.png" alt="" />
+            </li>
+            <li>
+              <img src="assets/life5.png" alt="" />
+            </li>	
+            <li>
+              <img src="assets/life6.png" alt="" />
+            </li>	
+            <li>
+              <img src="assets/life7.png" alt="" />
+            </li>												
+          </ul>
+    
+        </div>
+    
+        <div id="thumbnail">
+          <ul>
+            <li class="active"><img src="assets/life1.png" alt="" /></li>
+            <li><img src="assets/life2.png" alt="" /></li>
+            <li><img src="assets/life3.png" alt="" /></li>
+            <li><img src="assets/life4.png" alt="" /></li>		
+            <li><img src="assets/life5.png" alt="" /></li>	
+            <li><img src="assets/life6.png" alt="" /></li>	
+            <li><img src="assets/life7.png" alt="" /></li>						
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center;" class="news-latter" id="news">
+       <h2>Newsletter Signup</h2>
+       <div>
+        <div class="buttonIn">
+            <input type="text" id="enter" placeholder="abc@example.com">
+            <button id="sign-up">SIGN UP</button><br>
+            <button id="sign-up2">SIGN UP</button>
+        </div>
+       </div>
+    </div>
+    <p id="zippy-blog"></p>
+    <div style="text-align: center;" class="blog">
+      <h2 class="heading">BLOG</h2>
+      <div style="display: flex;" class="blog-card">
+        <div>
+          <img src="assets/office1.png" width="100%" height="150px">
+          <h3>Lorem Ipsum DOLOR SIT AMET</h3>
+          <p id="date">15 Jan, 2015</p>
+          <p class=".width-p">This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+        <hr class="line">
+        <div>
+          <img src="assets/office2.png" width="100%" height="150px">
+          <h3>Lorem Ipsum DOLOR SIT AMET</h3>
+          <p id="date">15 Jan, 2015</p>
+          <p>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+        <hr class="line">
+        <div>
+          <img src="assets/office3.png" width="100%" height="150px">
+          <h3>Lorem Ipsum DOLOR SIT AMET</h3>
+          <p id="date">15 Jan, 2015</p>
+          <p>This is Photoshop's version of Lorem ipsum, Proin gravida nibh vell velit auctor aliuet</p>
+          <div>LEARN MORE</div>
+        </div>
+      </div>
+    </div>
+    <p id="contact-zippy"></p>
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497699.99740270624!2d77.35073705551719!3d12.953847717924457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1635013835121!5m2!1sen!2sin" width="100%" height="680vw" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="column" style="background-color: #e9e921;">
+            <div style="text-align:center">
+              <h2>Contact Us</h2>
+            </div>
+            <form>
+              <label for="fname">NAME</label>
+              <input type="text" id="fname" name="name">
+              <label for="email">EMAIL ADDRESS</label>
+              <input type="text" id="email" name="emailAddress">
+              <label for="subject">SUBJECT</label>
+              <input type="text" id="fsubject" name="subject">
+              <label for="subject">MESSAGE</label>
+              <textarea id="subject" name="subject" style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer-contact">
+    <div>
+      <h3>OFFICE ADDRESS</h3>
+      <p>Lorem Ipsum dolor, 234</p>
+      <p>1200 Consectune</p>
+      <p>Adipsching</p>
+    </div>
+    <div>
+      <h3>FOLLOW US</h3>
+      <img src="assets/socialMedia.png" width="100px">
+    </div>
+    <div>
+      <h3>CONTACT US</h3>
+      <p>+ 123 456 789</p>
+      <p>zippy@skype</p>
+      <p>enquiry@zippy.com</p>
+    </div>
+  </footer>
+</body>
+</html>

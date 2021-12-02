@@ -1,0 +1,119 @@
+
+.about{
+    margin-top: 20px;
+    .heading{
+        font-size: 2vw;
+    }
+    .about-box{
+        width: 100%;
+        justify-content: center;
+        .p-sizing{
+            align-self: center;
+            width: 20%;
+            text-align: left;
+            font-size: 1.5vw;
+        }
+    }
+    .about-card{
+        justify-content: center;
+        
+        div{
+            display: inline;
+            padding: 50px;
+            width: 20vw;
+            h3{
+                padding: 25px;
+                color: #8400ff;
+            }
+            p{
+                font-size: 1vw;
+                margin-bottom: 2vw;
+            }
+            div{
+                background-color: #ffee00;
+                height: 2vw;
+                text-align: center;
+                padding: 15px;
+                font-size: 1vw;
+            }
+            div:hover{
+                background-color: #8400ff;
+                color: #dbd9d9;
+                cursor: pointer;
+            }
+        }
+        .line{
+            display: none;
+        }
+        
+    }
+    
+    @media (max-width: 1252px){
+        .heading{
+            font-size: 5.5vw;
+        }
+        .about-box{
+            width: 100%;
+            padding: 15px;
+            justify-content: center;
+            .p-sizing{
+                align-self: center;
+                width: 40%;
+                text-align: left;
+                font-size: 3vw;
+            }
+            img{
+                width: 30%;
+            }
+        }
+        .about-card{
+           flex-direction: column;
+           align-items: center;
+           width: 100vw;
+           div{
+            padding-top: 30px;
+            padding: 10px;
+            width: 100vw;
+            img{
+                width: 15vw;
+                margin-top: 40px;
+            }
+            h3{
+                padding: 25px;
+                color: #8400ff;
+            }
+            p{
+                font-size: 5vw;
+                margin-bottom: 2vw;
+                padding: 6vw;
+            }
+            div{
+                background-color: #ffee00;
+                height: 2vw;
+                text-align: center;
+                padding: 15px;
+                font-size: 3vw;
+            }
+            div:hover{
+                background-color: #8400ff;
+                color: #dbd9d9;
+                cursor: pointer;
+            }
+          }
+          .line{
+              display: flex;
+              width: 80vw;
+              margin-top: 50px;
+          }
+        }
+
+    }
+}
+.line1{
+    width: 80vw;
+    height: 4px;
+    background-color: #dbd9d9;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

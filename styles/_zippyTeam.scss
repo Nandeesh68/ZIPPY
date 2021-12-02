@@ -1,0 +1,36 @@
+.zippy-team{
+
+    h2{
+        font-size: 2.5vw;
+        padding-top: 50px;
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .team-members
+    {
+        
+        padding: 10px;
+        div{
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            div{
+                margin: 1vw;
+                figure{
+                    img{
+                        width: 8vw;
+                        height: 8vw;
+                        border-radius: 50%;
+                    }
+                    figcaption{
+                        text-align: center;
+                        h3
+                        {
+                            font-size: 1vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
